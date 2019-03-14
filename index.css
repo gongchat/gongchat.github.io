@@ -1,0 +1,276 @@
+html,
+body,
+.gong-sidebar,
+.gong-sidebar-content,
+.container,
+.content {
+  height: 100%;
+}
+
+html {
+  background-color: #333;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 15px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+/* hero */
+.gong-sidebar {
+  width: 300px;
+  position: relative;
+}
+
+.gong-sidebar-content {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+  padding: 64px 0;
+  overflow-y: auto;
+}
+
+.gong-sidebar-content>* {
+  flex-shrink: 0;
+}
+
+.gong-sidebar h1 {
+  text-align: center;
+  font-size: 64px;
+  margin: 0;
+}
+
+.gong-sidebar p {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.gong-sidebar-links {
+  padding-top: 15px;
+}
+
+.gong-sidebar-links a {
+  padding: 0 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.gong-sidebar-links a:hover {
+  color: gold;
+}
+
+/* Gong Logo */
+.gong-logo {
+  height: 215px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.gong-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gong-bar {
+  width: 200px;
+  height: 20px;
+  background: #351807;
+  position: relative;
+  z-index: 1;
+}
+
+.gong-strings {
+  width: 125px;
+  height: 125px;
+  transform: rotate(45deg);
+  border-right: 3px solid #848484;
+  border-bottom: 3px solid #848484;
+  margin-top: -75px;
+  margin-bottom: -35px;
+  position: relative;
+  z-index: -1;
+}
+
+.gong {
+  position: absolute;
+  top: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.gong-outter {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background: gold;
+  position: absolute;
+  z-index: -1;
+}
+
+.gong-inner {
+  background: #ffe900;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.gonged .gong {
+  animation: gong 5s linear;
+  animation-iteration-count: 1;
+}
+
+.gonged .wave {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #f7d600;
+  opacity: 0;
+  transition: 5s ease;
+  position: absolute;
+  z-index: 3;
+}
+
+.gonged .delay1 {
+  animation: waves 5s 0.5s linear;
+  animation-iteration-count: 1;
+}
+
+.gonged .delay2 {
+  animation: waves 5s linear 1.3s forwards;
+  animation-iteration-count: 1;
+}
+
+.gonged .delay3 {
+  animation: waves 5s linear 1.9s forwards;
+  animation-iteration-count: 1;
+}
+
+.gonged .delay4 {
+  animation: waves 5s linear 2.5s forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes gong {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  2% {
+    transform: translate(-2px, 0);
+  }
+
+  3% {
+    transform: translate(0, -2px);
+  }
+
+  4% {
+    transform: translate(2px, 0);
+  }
+
+  5% {
+    transform: translate(0, 2px);
+  }
+
+  6%,
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    transform: scale(14);
+    opacity: 0;
+  }
+}
+
+/* menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 300px;
+  right: 0;
+  padding: 15px;
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+.menu a.active {
+  color: gold;
+}
+
+.menu a:last-child {
+  padding-right: 0;
+}
+
+.menu a:hover {
+  color: gold;
+}
+
+/* content */
+.content {
+  background-color: #3f3f3f;
+  flex-grow: 1;
+  padding: 64px 30px;
+}
+
+.updates {
+  max-width: 800px;
+  margin: auto;
+}
+
+.updates h2 {
+  padding-bottom: 30px;
+}
+
+.updates h3 {
+  color: gold;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.updates li {
+  padding: 5px 0;
+}
+
+.update {
+  padding-bottom: 30px;
+}
