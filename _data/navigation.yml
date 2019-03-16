@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Release Notes
+  link: /release-notes/
+- name: Download
+  link: /download/
+- name: FAQ
+  link: /faq/
+- name: Road Map
+  link: /road-map/

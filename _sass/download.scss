@@ -1,0 +1,26 @@
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+
+    i {
+      font-size: 62px;
+    }
+
+    span {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+  }
+}

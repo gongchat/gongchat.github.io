@@ -1,0 +1,140 @@
+/* Gong Logo */
+.gong-logo {
+  height: 215px;
+  width: 300px;
+  flex-shrink: 0;
+
+  .gong-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .gong-bar {
+    width: 200px;
+    height: 20px;
+    background: #351807;
+    position: relative;
+    z-index: 1;
+  }
+
+  .gong-strings {
+    width: 125px;
+    height: 125px;
+    transform: rotate(45deg);
+    border-right: 3px solid #848484;
+    border-bottom: 3px solid #848484;
+    margin-top: -75px;
+    margin-bottom: -35px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .gong {
+    position: absolute;
+    top: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .gong-outter {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background: gold;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .gong-inner {
+    background: #ffe900;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+
+.gonged {
+  .gong {
+    animation: gong 5s linear;
+    animation-iteration-count: 1;
+  }
+
+  .wave {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #f7d600;
+    opacity: 0;
+    transition: 5s ease;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .delay1 {
+    animation: waves 5s 0.5s linear;
+    animation-iteration-count: 1;
+  }
+
+  .delay2 {
+    animation: waves 5s linear 1.3s forwards;
+    animation-iteration-count: 1;
+  }
+
+  .delay3 {
+    animation: waves 5s linear 1.9s forwards;
+    animation-iteration-count: 1;
+  }
+
+  .delay4 {
+    animation: waves 5s linear 2.5s forwards;
+    animation-iteration-count: 1;
+  }
+}
+
+
+@keyframes gong {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  2% {
+    transform: translate(-2px, 0);
+  }
+
+  3% {
+    transform: translate(0, -2px);
+  }
+
+  4% {
+    transform: translate(2px, 0);
+  }
+
+  5% {
+    transform: translate(0, 2px);
+  }
+
+  6%,
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    transform: scale(14);
+    opacity: 0;
+  }
+}

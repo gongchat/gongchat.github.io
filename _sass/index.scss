@@ -1,0 +1,19 @@
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card {
+  flex: 1;
+  margin: 15px;
+
+  .card-content {
+    padding: 15px;
+    background-color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,23 @@
+.updates {
+  li {
+    padding: 5px 0;
+  }
+}
+
+.update {
+  padding-bottom: 30px;
+
+  h2 {
+    color: gold;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span:last-child {
+      font-size: 1rem;
+    }
+  }
+}
