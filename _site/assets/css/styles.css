@@ -138,7 +138,8 @@
   top: 0;
   left: 300px;
   right: 0;
-  background-color: #3a3a3a; }
+  background-color: #3a3a3a;
+  padding: 0 15px; }
   .menu .nav {
     padding: 15px;
     display: flex;
@@ -155,34 +156,98 @@
         padding-right: 0; }
       .menu .nav a:hover {
         color: gold; }
-  .menu .small-content {
-    display: none; }
-    .menu .small-content h1 {
+  .menu .nav-bar {
+    display: none;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center; }
+    .menu .nav-bar h1 {
       font-size: 15px;
       margin: 0;
       padding: 5px; }
-    .menu .small-content .menu-open {
-      padding: 7px 15px; }
-      .menu .small-content .menu-open .menu-bar {
-        background: white;
+    .menu .nav-bar .hamburger {
+      font: inherit;
+      display: inline-block;
+      overflow: visible;
+      margin: 0;
+      padding: 10px 0;
+      cursor: pointer;
+      transition-timing-function: linear;
+      transition-duration: .15s;
+      transition-property: opacity, filter;
+      text-transform: none;
+      color: inherit;
+      border: 0;
+      background-color: transparent; }
+      .menu .nav-bar .hamburger .hamburger-box {
+        position: relative;
+        display: inline-block;
+        width: 25px;
+        height: 9px; }
+      .menu .nav-bar .hamburger .hamburger-inner,
+      .menu .nav-bar .hamburger .hamburger-inner:before,
+      .menu .nav-bar .hamburger .hamburger-inner:after {
+        position: absolute;
+        width: 25px;
         height: 2px;
-        width: 20px;
-        margin: 3px 0; }
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        border-radius: 4px;
+        background-color: #fff; }
+      .menu .nav-bar .hamburger .hamburger-inner {
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transition-duration: 75ms;
+        top: 50%;
+        display: block;
+        margin-top: -2px; }
+        .menu .nav-bar .hamburger .hamburger-inner:before, .menu .nav-bar .hamburger .hamburger-inner:after {
+          display: block;
+          content: ""; }
+        .menu .nav-bar .hamburger .hamburger-inner:before {
+          transition: top 75ms ease .12s, opacity 75ms ease;
+          top: -7px; }
+        .menu .nav-bar .hamburger .hamburger-inner:after {
+          transition: bottom 75ms ease 0.12s, transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          bottom: -7px; }
+  .menu.open .hamburger .hamburger-box .hamburger-inner {
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: rotate(45deg); }
+    .menu.open .hamburger .hamburger-box .hamburger-inner:before {
+      top: 0;
+      transition: top 75ms ease, opacity 75ms ease .12s;
+      opacity: 0; }
+    .menu.open .hamburger .hamburger-box .hamburger-inner:after {
+      bottom: 0;
+      transition: bottom 75ms ease, transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+      transform: rotate(-90deg); }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .menu {
     left: 0; }
+    .menu .nav-bar {
+      display: flex; }
+      .menu .nav-bar .hamburger {
+        display: none; } }
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; }
     .menu .nav {
-      display: none; }
-    .menu .small-content {
-      flex-grow: 1;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      display: none;
+      flex-direction: column;
+      flex-grow: 1; }
+      .menu .nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid #aaaa; }
+        .menu .nav a:last-child {
+          border-bottom: none; }
+    .menu .nav-bar {
+      display: flex; }
+      .menu .nav-bar .hamburger {
+        display: inline-block; }
     .menu.open .nav {
-      flex-direction: column; }
-      .menu.open .nav a {
-        padding: 15px 0; } }
+      display: flex; } }
 .updates li {
   padding: 5px 0; }
 
@@ -233,7 +298,7 @@
       .gong-sidebar-content .gong-sidebar-links a:hover {
         color: gold; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .gong-sidebar {
     display: none; } }
 html,

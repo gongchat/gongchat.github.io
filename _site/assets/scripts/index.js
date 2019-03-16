@@ -9,5 +9,14 @@ $(document).ready(function() {
     if (!$newGong.hasClass('gonged')) {
       $newGong.addClass('gonged');
     }
-  })
+  });
+
+  $('body').on('click', '.hamburger', function() {
+    const $menu = $('.menu');
+    if ($menu.hasClass('open')) {
+      $menu.removeClass('open');
+    } else {
+      $menu.addClass('open');
+    }
+  });
 });

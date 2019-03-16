@@ -1,4 +1,12 @@
 <div class="menu">
+  <div class="nav-bar">
+      <h1>GONG</h1>
+      <div class="hamburger">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </div>
   <nav class="nav">
     {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
@@ -6,12 +14,4 @@
     </a>
     {% endfor %}
   </nav>
-  <div class="small-content">
-    <h1>GONG</h1>
-    <div class="menu-open">
-      <div class="menu-bar"></div>
-      <div class="menu-bar"></div>
-      <div class="menu-bar"></div>
-    </div>
-  </div>
 </div>
