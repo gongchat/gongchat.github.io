@@ -1,6 +1,6 @@
 ---
 layout: release-note
-title: Release Note
+title: Release 0.1.0
 ---
 
 Placeholder post

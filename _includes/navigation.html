@@ -1,7 +1,17 @@
-<nav class="menu">
-  {% for item in site.data.navigation %}
+<div class="menu">
+  <nav class="nav">
+    {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
       {{ item.name }}
     </a>
-  {% endfor %}
-</nav>
+    {% endfor %}
+  </nav>
+  <div class="small-content">
+    <h1>GONG</h1>
+    <div class="menu-open">
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+    </div>
+  </div>
+</div>

@@ -19,14 +19,10 @@
 </head>
 
 <body>
-  <div class="container">
-    {% include sidebar.html %}
-    {% include navigation.html %}
-    <div class="content-wrapper">
-      <div class="content">
-        {{ content }}
-      </div>
-    </div>
+  {% include sidebar.html %}
+  {% include navigation.html %}
+  <div class="content">
+    {{ content }}
   </div>
 </body>
 

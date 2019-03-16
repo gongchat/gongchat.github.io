@@ -19,7 +19,7 @@ title: FAQ
 
 - **Gong has stopped working, what can I do to fix it?**
   
-  Try deleting your `config.json` file from the location above. Warning, this will delete all your saved configurations such as themes and rooms.
+  Try deleting your `config.json` file from the location above. This will delete all your saved configurations such as themes and rooms.
 
 - **I found a bug, what should I do?**
 

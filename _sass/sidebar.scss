@@ -2,6 +2,7 @@
   width: 300px;
   position: relative;
   flex-shrink: 0;
+  background-color: #333;
 
   h1 {
     text-align: center;
@@ -42,5 +43,11 @@
         color: gold;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .gong-sidebar {
+    display: none;
   }
 }

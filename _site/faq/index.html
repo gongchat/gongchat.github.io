@@ -19,8 +19,7 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="gong-sidebar">
+  <div class="gong-sidebar">
   <div class="gong-sidebar-content">
     <div>
       <h1>GONG</h1>
@@ -49,41 +48,52 @@
     </div>
   </div>
 </div>
-    <nav class="menu">
-  
+  <div class="menu">
+  <nav class="nav">
+    
     <a href="/" >
       Home
     </a>
-  
+    
     <a href="/release-notes/" >
       Release Notes
     </a>
-  
+    
     <a href="/download/" >
       Download
     </a>
-  
+    
     <a href="/faq/" class="active">
       FAQ
     </a>
-  
+    
     <a href="/road-map/" >
       Road Map
     </a>
-  
-</nav>
-    <div class="content-wrapper">
-      <div class="content">
-        <h2 id="faq">FAQ</h2>
+    
+  </nav>
+  <div class="small-content">
+    <h1>GONG</h1>
+    <div class="menu-open">
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+    </div>
+  </div>
+</div>
+  <div class="content">
+    <h2 id="faq">FAQ</h2>
 
 <ul>
   <li>
     <p><strong>What is Gong built with?</strong></p>
 
-    <p>Gong is built on React and Electron.</p>
+    <p>Gong is built with React and Electron.</p>
   </li>
   <li>
     <p><strong>Where is my data stored?</strong></p>
+
+    <p>Gong currently stores a configuration file and logs. The location will differ depending on your operating system, view below:</p>
 
     <ul>
       <li>Windows: <code class="highlighter-rouge">C:\Users\&lt;username&gt;\AppData\Roaming\gong\</code></li>
@@ -94,7 +104,7 @@
   <li>
     <p><strong>Gong has stopped working, what can I do to fix it?</strong></p>
 
-    <p>Try deleting your <code class="highlighter-rouge">config.json</code> file from the location above. Warning, this will delete all your saved configurations such as themes and rooms.</p>
+    <p>Try deleting your <code class="highlighter-rouge">config.json</code> file from the location above. This will delete all your saved configurations such as themes and rooms.</p>
   </li>
   <li>
     <p><strong>I found a bug, what should I do?</strong></p>
@@ -108,8 +118,6 @@
   </li>
 </ul>
 
-      </div>
-    </div>
   </div>
 </body>
 
