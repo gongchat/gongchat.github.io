@@ -5,8 +5,8 @@ title: Road Map
 
 ## Road Map
 
-- [ ] Get auto updater working
-- [ ] Put together a website to download etc
+- [x] Get auto updater working
+- [x] Put together a website to download etc
 
 Release 0.1.0
 
