@@ -10,6 +10,17 @@ title: Road Map
 
 Release 0.1.0
 
+- [ ] Allow pining of gong in linux
+      https://ubuntuforums.org/showthread.php?t=2390969
+      https://bugs.launchpad.net/ubuntu/+source/gnome-shell-extension-ubuntu-dock/+bug/1768609
+      https://bugzilla.gnome.org/show_bug.cgi?id=738672
+
+- [ ] Send direct messages to the same resource a message was received by
+- [ ] Properly break long strings (ex. urls)
+
+Release 0.1.2
+
+- [ ] Make input dynamic add fix issues with scroll bar
 - [ ] Fix scrolling problems
 - [ ] Fix url recognition
 - [ ] Fix parsing errors from markdown-it
@@ -23,6 +34,7 @@ Release 0.2.0
 - [ ] Have setting to load application on startup
 - [ ] Flash icon in tray on message
 - [ ] Setup AppUserModelIDs, will fix notifications for Windows
+- [ ] App signing
 - [ ] After x min of inactivity set status to away
 - [ ] Confirm all message errors have been accounted for
 
@@ -38,7 +50,6 @@ Release 0.3.0
 - [ ] Virtualize messages when there is a large number of them
 - [ ] Notify user on both ends when someone is typing
 - [ ] Some type of log explorer
-- [ ] Fix scroll flicker when logs load
 
 Release 0.4.0
 
