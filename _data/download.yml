@@ -1,6 +1,0 @@
-windows:
-  link: "https://github.com/gongchat/gong/releases/download/v0.1.0/gong-setup-0.1.0.exe"
-linux:
-  link: "https://github.com/gongchat/gong/releases/download/v0.1.0/gong-0.1.0-x86_64.AppImage"
-mac:
-  link: "https://github.com/gongchat/gong/releases/download/v0.1.0/Gong-0.1.0.dmg"
