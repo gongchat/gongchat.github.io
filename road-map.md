@@ -11,10 +11,6 @@ title: Road Map
 Release 0.1.0
 
 - [x] Allow pining of gong in linux
-      https://ubuntuforums.org/showthread.php?t=2390969
-      https://bugs.launchpad.net/ubuntu/+source/gnome-shell-extension-ubuntu-dock/+bug/1768609
-      https://bugzilla.gnome.org/show_bug.cgi?id=738672
-
 - [x] Send direct messages to the same resource a message was received by
 - [x] Properly break long strings (ex. urls)
 
