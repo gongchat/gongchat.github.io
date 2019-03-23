@@ -1,19 +1,26 @@
-.cards {
-  display: flex;
-  flex-wrap: nowrap;
+.section-about {
+  background-color: #BA0023;
 }
 
-.card {
-  flex: 1;
-  margin: 15px;
-
-  .card-content {
-    padding: 15px;
-    background-color: #333;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.section-colors {
+  .mini-gong {
+    height: 400px;
+    margin-bottom: 15px;
   }
+}
+
+.section-fonts {
+  background-color: #259CB2;
+}
+
+.section-media-content {}
+
+.section-markdown {
+  background-color: #2F773B;
+}
+
+.section-messages {}
+
+.section-something {
+  background-color: #FF4000;
 }

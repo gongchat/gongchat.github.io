@@ -25,11 +25,52 @@ a {
   text-decoration: none;
 }
 
-.content {
-  flex-grow: 1;
-  padding: 64px 30px;
+footer {
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 11px;
 }
 
-.container {
-  max-width: 800px;
+.content {
+  flex-grow: 1;
+  padding-top: 46px;
+  display: flex;
+  flex-direction: column;
+
+  .section {
+    flex-grow: 1;
+    padding: 60px 15px;
+
+    h2 {
+      margin: 15px 0;
+      font-size: 48px;
+      text-transform: uppercase;
+    }
+  }
+
+  .section-content {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    flex-direction: column;
+
+    .gong-sidebar {
+      padding: 50px 0;
+      width: 100%;
+      z-index: -1;
+
+      .gong-sidebar-content {
+        overflow: hidden;
+        position: relative;
+      }
+    }
+
+    .content {
+      padding-top: 0;
+    }
+  }
 }

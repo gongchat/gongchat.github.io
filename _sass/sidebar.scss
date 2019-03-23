@@ -33,6 +33,10 @@
 
   .gong-sidebar-links {
     padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     a {
       padding: 0 10px;
@@ -43,11 +47,5 @@
         color: gold;
       }
     }
-  }
-}
-
-@media (max-width: 992px) {
-  .gong-sidebar {
-    display: none;
   }
 }
