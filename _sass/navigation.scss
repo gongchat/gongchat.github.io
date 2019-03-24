@@ -178,6 +178,12 @@
     &.open {
       .nav {
         display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #3a3a3a;
+        right: 0;
+        margin-top: 46px;
       }
     }
   }
