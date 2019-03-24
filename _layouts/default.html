@@ -2,42 +2,47 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-        content="Gong an open source XMPP chat client">
-  <meta name="keywords"
-        content="Gong,XMPP,Chat,Open Source,React,Reactjs,Electron,Jabber">
-  <meta name="author"
-        content="John Doe">
-  <link rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-  <link rel="icon"
-        href="/assets/favicon.png"
-        type="image/png" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono"
-        rel="stylesheet">
-  <link rel="stylesheet"
-        href="/assets/css/styles.css" />
-  <script type="text/javascript"
-          src="/assets/scripts/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript"
-          src="/assets/scripts/index.js"></script>
-  <title>Gong {{ page.title }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description"
+				content="Gong an open source XMPP chat client">
+	<meta name="keywords"
+				content="Gong,XMPP,Chat,Open Source,React,Reactjs,Electron,Jabber">
+	<meta name="author"
+				content="John Doe">
+	<link rel="stylesheet"
+				href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+				integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+				crossorigin="anonymous">
+	<link rel="icon"
+				href="/assets/favicon.png"
+				type="image/png" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+				rel="stylesheet">
+	<link rel="stylesheet"
+				href="/assets/css/styles.css" />
+	<script type="text/javascript"
+					src="/assets/scripts/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript"
+					src="/assets/scripts/index.js"></script>
+
+	<!-- Fonts for dynamic google fonts section -->
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Indie+Flower|Libre+Barcode+39|Merriweather|Open+Sans+Condensed:300|Raleway|Roboto+Slab"
+				rel="stylesheet">
+
+	<title>Gong {{ page.title }}</title>
 </head>
 
 <body>
-  {% include navigation.html %}
-  {% include sidebar.html %}
-  <div class="content">
-    {{ content }}
-    <footer>
-      <span>&copy; Gong {{ site.time | date: '%Y' }}</span>
-    </footer>
-  </div>
+	{% include navigation.html %}
+	{% include sidebar.html %}
+	<div class="content">
+		{{ content }}
+		<footer>
+			<span>&copy; Gong {{ site.time | date: '%Y' }}</span>
+		</footer>
+	</div>
 </body>
 
 </html>

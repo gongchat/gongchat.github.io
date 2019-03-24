@@ -11,12 +11,28 @@
 
 .section-fonts {
   background-color: #259CB2;
+
+  .dynamic-google-font {
+    font-size: 24px;
+    height: 36px;
+  }
 }
 
 .section-media-content {}
 
 .section-markdown {
   background-color: #2F773B;
+
+  .emojis {
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      display: block;
+      width: 21px;
+      text-align: center;
+    }
+  }
 }
 
 .section-messages {}
