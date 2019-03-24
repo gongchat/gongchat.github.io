@@ -8,9 +8,11 @@ title: Release Notes
     <h2>Release Notes</h2>
     <ul>
       {% for post in site.posts %}
+      {% if post.path contains 'release-notes' %}
       <li>
         <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date_to_string }}</a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

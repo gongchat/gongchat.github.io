@@ -17,14 +17,14 @@
     border-bottom: 1px solid;
     border-bottom-color: rgba(125, 125, 125, 0.4);
 
-    >div:first-child {
+    > div:first-child {
       width: 20%;
       max-width: 90px;
       height: 15px;
       background-color: #444;
     }
 
-    >div:last-child {
+    > div:last-child {
       flex-grow: 1;
       background-color: #555;
     }
@@ -42,11 +42,11 @@
       flex-direction: column;
       background-color: #444;
 
-      >div:first-child {
+      > div:first-child {
         flex-grow: 1;
       }
 
-      >div:last-child {
+      > div:last-child {
         height: 25px;
         background-color: #333;
       }
@@ -58,18 +58,18 @@
       flex-direction: column;
       background-color: #555;
 
-      >div:first-child {
+      > div:first-child {
         flex-grow: 1;
       }
 
-      >div:last-child {
+      > div:last-child {
         border-top: 1px solid;
         border-top-color: rgba(125, 125, 125, 0.4);
         height: 40px;
         padding: 7px;
         display: flex;
-        
-        >div {
+
+        > div {
           border-radius: 2px;
           background-color: #666;
           flex-grow: 1;

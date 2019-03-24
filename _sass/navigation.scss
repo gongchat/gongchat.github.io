@@ -134,6 +134,7 @@
   }
 }
 
+// handles when sidebar collapses
 @media (max-width: 992px) {
   .menu {
     left: 0;
@@ -148,7 +149,8 @@
   }
 }
 
-@media (max-width: 768px) {
+// handles when nav collapses
+@media (max-width: 525px) {
   .menu {
     flex-direction: column;
 
@@ -158,8 +160,7 @@
       flex-grow: 1;
 
       a {
-        padding: 15px 0;
-        border-bottom: 1px solid #aaaa;
+        padding: 10px 0;
 
         &:last-child {
           border-bottom: none;

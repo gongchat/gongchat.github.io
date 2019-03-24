@@ -1,4 +1,4 @@
-.faq {
+.faq .section-content {
   h2 {
     color: gold;
     padding-bottom: 10px;
@@ -6,16 +6,16 @@
     border-bottom: 1px solid #555;
   }
 
-  ul {
-    >li {
+  & > ul {
+    & > li {
       border-bottom: 1px solid #555;
 
-      >ul {
+      & > ul {
         padding-bottom: 15px;
       }
     }
 
-    >li:last-child {
+    & > li:last-child {
       border-bottom: none;
     }
   }

@@ -1,17 +1,13 @@
 ---
 layout: release-note
-title: Release 0.1.0
+category: release-notes
+title: Release 0.1.X
 ---
 
 Welcome to the Alpha release of Gong! The goal is to build a customizable XMPP
 chat client with a modern UI. For more information please visit the [GitHub](https://github.com/gongchat/gong) page.
 
 If you find any issues or have any feature requests please leave a post at [github.com/gongchat/gong/issues](https://github.com/gongchat/gong/issues).
-
-### Release 0.1.1
-
-- Fix messages not updating when changing channels.
-- Fix exception when removing channels.
 
 ### Release 0.1.2
 
@@ -26,3 +22,8 @@ If you find any issues or have any feature requests please leave a post at [gith
   prioritize which client to send a message too.
 - Remove tray icon from Linux. The tray icon will only be used for status purposes moving forward. See the Electron [docs](https://electronjs.org/docs/api/tray#class-tray) for more details.
 - Included a .deb installation file for Linux users and is now the default file type for this site. Some users may have had issues adding Gong to the favorites bar with the previously format.
+
+### Release 0.1.1
+
+- Fix messages not updating when changing channels.
+- Fix exception when removing channels.
