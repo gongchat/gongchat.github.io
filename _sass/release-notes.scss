@@ -1,4 +1,11 @@
 .section-updates {
+  h2 {
+    color: gold;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+  }
+
   li {
     padding: 5px 0;
   }
@@ -19,5 +26,9 @@
     span:last-child {
       font-size: 1rem;
     }
+  }
+
+  li {
+    padding: 3px 0;
   }
 }

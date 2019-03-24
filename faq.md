@@ -1,5 +1,5 @@
 ---
-layout: default-markdown
+layout: faq
 title: FAQ
 ---
 

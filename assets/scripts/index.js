@@ -1,3 +1,5 @@
+const DELAY = 200;
+
 const COLORS = [{
     color1: '#333',
     color2: '#444',
@@ -116,7 +118,7 @@ $(document).ready(function() {
         updateColor = true;
         clearTimeout(updateColorTimer);
         updateColorTimer = undefined;
-      }, 1000);
+      }, DELAY);
     }
   }
 
@@ -159,7 +161,7 @@ $(document).ready(function() {
         updateFontFamily = true;
         clearTimeout(updateFontFamilyTimer);
         updateFontFamilyTimer = undefined;
-      }, 1000);
+      }, DELAY);
     }
   }
 
@@ -190,7 +192,7 @@ $(document).ready(function() {
         updateEmojis = true;
         clearTimeout(updateEmojisTimer);
         updateEmojisTimer = undefined;
-      }, 1000);
+      }, DELAY);
     }
   }
 

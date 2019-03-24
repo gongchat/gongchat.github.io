@@ -1,42 +1,61 @@
-.section-about {
-  background-color: #BA0023;
-}
-
-.section-colors {
-  .mini-gong {
-    height: 400px;
-    margin-bottom: 15px;
+.home {
+  h2 {
+    color: white;
+    border-bottom: none;
+    margin: 15px 0;
+    padding: 0;
   }
-}
 
-.section-fonts {
-  background-color: #259CB2;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-  .dynamic-google-font {
-    font-size: 24px;
-    height: 36px;
-  }
-}
-
-.section-media-content {}
-
-.section-markdown {
-  background-color: #2F773B;
-
-  .emojis {
-    display: flex;
-    flex-wrap: wrap;
-
-    span {
-      display: block;
-      width: 21px;
-      text-align: center;
+    >li {
+      padding: 2px 4px;
     }
   }
-}
 
-.section-messages {}
+  .section-about {
+    background-color: #BA0023;
+  }
 
-.section-something {
-  background-color: #FF4000;
+  .section-colors {
+    .mini-gong {
+      height: 400px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .section-fonts {
+    background-color: #259CB2;
+
+    .dynamic-google-font {
+      font-size: 24px;
+      height: 36px;
+    }
+  }
+
+  .section-media-content {}
+
+  .section-markdown {
+    background-color: #2F773B;
+
+    .emojis {
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        display: block;
+        width: 21px;
+        text-align: center;
+      }
+    }
+  }
+
+  .section-messages {}
+
+  .section-something {
+    background-color: #FF4000;
+  }
 }
