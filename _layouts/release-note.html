@@ -6,7 +6,7 @@ layout: default
   <div class="section-content">
     <div class="update">
       <h2>
-        <span>{{ page.title }}</span> <span>{{ page.date | date_to_string }}</span>
+        <span>{{ page.title }}</span> <span>{{ page.date | date: "%b %d %Y" }}</span>
       </h2>
       {{ content }}
     </div>
