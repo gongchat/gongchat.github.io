@@ -21,12 +21,9 @@ $(document).ready(function() {
   }
 
   function attachMiniGongOnScroll() {
-    const $section = $('.section-colors');
-    if ($section.length > 0) {
-      $(window).scroll(function() {
-        updateMiniGongColor();
-      });
-    }
+    $(window).scroll(function() {
+      updateMiniGongColor();
+    });
   }
 
   function updateMiniGongColor() {
@@ -64,18 +61,15 @@ $(document).ready(function() {
   //
 
   function attachFontOnScroll() {
-    $('.section-fonts').mousemove(function() {
+    $(window).scroll(function() {
       updateTextFontFamily();
     });
   }
 
   function attachFontOnMouseMove() {
-    const $section = $('.section-fonts');
-    if ($section.length > 0) {
-      $section.mousemove(function() {
-        updateTextFontFamily();
-      });
-    }
+    $('.section-fonts').mousemove(function() {
+      updateTextFontFamily();
+    });
   }
 
   function updateTextFontFamily() {
@@ -106,13 +100,16 @@ $(document).ready(function() {
   // Emojis
   //
 
+  function attachEmojisOnScroll() {
+    $(window).scroll(function() {
+      randomizeEmojis();
+    });
+  }
+
   function attachEmojisOnMouseMove() {
-    const $section = $('.section-markdown');
-    if ($section.length > 0) {
-      $section.mousemove(function() {
-        randomizeEmojis();
-      });
-    }
+    $('.section-markdown').mousemove(function() {
+      randomizeEmojis();
+    });
   }
 
   function randomizeEmojis() {
@@ -146,22 +143,11 @@ $(document).ready(function() {
     return newArr;
   }
 
-  function emojiStringToArray(str) {
-    split = str.split(/([\uD800-\uDBFF][\uDC00-\uDFFF])/);
-    arr = [];
-    for (var i = 0; i < split.length; i++) {
-      char = split[i];
-      if (char !== '') {
-        arr.push(char);
-      }
-    }
-    return arr;
-  }
-
   // attach all the things
-  // attachMiniGongOnScroll();
+  attachMiniGongOnScroll();
   attachMiniGongOnMouseMove();
-  // attachFontOnScroll();
+  attachFontOnScroll();
   attachFontOnMouseMove();
+  attachEmojisOnScroll();
   attachEmojisOnMouseMove();
 });
