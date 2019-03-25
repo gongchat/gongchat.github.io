@@ -24,17 +24,29 @@
 				rel="stylesheet">
 
 	<link rel="stylesheet"
-				href="/assets/css/styles.css" />
+				href="/assets/css/global.css" />
 
 	<script type="text/javascript"
 					src="/assets/scripts/jquery-3.3.1.min.js"></script>
 
 	<script type="text/javascript"
-					src="/assets/scripts/index.js"></script>
+					src="/assets/scripts/global.js"></script>
 
 	<!-- Fonts for dynamic google fonts section -->
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Indie+Flower|Libre+Barcode+39|Merriweather|Open+Sans+Condensed:300|Raleway|Roboto+Slab"
 				rel="stylesheet">
+
+	{% if page.include_css %}
+		{% for stylesheet in page.include_css %}
+			<link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
+		{% endfor %}
+	{% endif %}
+
+	{% if page.include_js %}
+		{% for js_file in page.include_js %}
+			<script src='/assets/scripts/{{ js_file }}.js' type="text/javascript"></script>
+		{% endfor %}
+	{% endif %}
 
 	<title>Gong {{ page.title }}</title>
 </head>

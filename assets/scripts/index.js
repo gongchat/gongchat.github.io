@@ -1,42 +1,3 @@
-const DELAY = 200;
-
-const COLORS = [{
-    color1: '#333',
-    color2: '#444',
-    color3: '#555',
-    color4: '#666'
-  },
-  {
-    color1: '#182126',
-    color2: '#357CA8',
-    color3: '#AFC2D1',
-    color4: '#F66874'
-  },
-  {
-    color1: '#406B5A',
-    color2: '#44B2BF',
-    color3: '#C4F1F4',
-    color4: '#E5B270'
-  },
-  {
-    color1: '#FF8C9B',
-    color2: '#FFC8CB',
-    color3: '#FCEEBD',
-    color4: '#A1F15E'
-  },
-];
-
-const FONTS = [
-  `'Merriweather', serif`,
-  `'Raleway', sans-serif`,
-  `'Roboto Slab', serif`,
-  `'Amatic SC', cursive`,
-  `'Dancing Script', cursive`,
-  `'Indie Flower', cursive`,
-  `'Libre Barcode 39', cursive`,
-  `'Open Sans Condensed', sans-serif`,
-];
-
 $(document).ready(function() {
   let updateColor = true;
   let updateColorTimer;
@@ -48,30 +9,6 @@ $(document).ready(function() {
 
   let updateEmojis = true;
   let updateEmojisTimer;
-
-  function attachGongOnClick() {
-    $('body').on('click', '.gong', function() {
-      const $this = $(this);
-      const $gongLogo = $this.parents('.gong-logo');
-      const clonedThis = $gongLogo.clone();
-      $gongLogo.replaceWith(clonedThis);
-      const $newGong = $('.gong-logo');
-      if (!$newGong.hasClass('gonged')) {
-        $newGong.addClass('gonged');
-      }
-    });
-  }
-
-  function attachHamburgerOnClick() {
-    $('body').on('click', '.hamburger', function() {
-      const $menu = $('.menu');
-      if ($menu.hasClass('open')) {
-        $menu.removeClass('open');
-      } else {
-        $menu.addClass('open');
-      }
-    });
-  }
 
   //
   // Mini Gong
@@ -166,7 +103,7 @@ $(document).ready(function() {
   }
 
   //
-  // Emojis 
+  // Emojis
   //
 
   function attachEmojisOnMouseMove() {
@@ -201,35 +138,30 @@ $(document).ready(function() {
   //
 
   function getShuffledArr(arr) {
-    const newArr = arr.slice()
+    const newArr = arr.slice();
     for (let i = newArr.length - 1; i > 0; i--) {
       const rand = Math.floor(Math.random() * (i + 1));
       [newArr[i], newArr[rand]] = [newArr[rand], newArr[i]];
     }
-    return newArr
-  };
+    return newArr;
+  }
 
   function emojiStringToArray(str) {
     split = str.split(/([\uD800-\uDBFF][\uDC00-\uDFFF])/);
     arr = [];
     for (var i = 0; i < split.length; i++) {
-      char = split[i]
-      if (char !== "") {
+      char = split[i];
+      if (char !== '') {
         arr.push(char);
       }
     }
     return arr;
-  };
+  }
 
   // attach all the things
-  attachGongOnClick();
-  attachHamburgerOnClick();
-
   // attachMiniGongOnScroll();
   attachMiniGongOnMouseMove();
-
   // attachFontOnScroll();
   attachFontOnMouseMove();
-
   attachEmojisOnMouseMove();
 });

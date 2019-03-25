@@ -3,14 +3,14 @@ layout: default
 title: Release Notes
 ---
 
-<div class="section section-updates">
+<div class="section simple-section section-updates">
   <div class="section-content">
     <h2>Release Notes</h2>
     <ul>
       {% for post in site.posts %}
       {% if post.path contains 'release-notes' %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date_to_string }}</a>
+        <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%b %d %Y" }}</a>
       </li>
       {% endif %}
       {% endfor %}
