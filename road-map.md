@@ -5,26 +5,24 @@ title: Road Map
 
 ## Road Map
 
-- [x] Get auto updater working
-- [x] Put together a website to download etc
+- [ ] Flash app icon when message is received
+- [ ] Focus input when a channel is selected
+- [ ] Allow selection of emojis or users with tab
 
-Release 0.1.0
+Release 0.1.4
 
-- [x] Allow pining of gong in linux
-- [x] Send direct messages to the same resource a message was received by
-- [x] Properly break long strings (ex. urls)
+- [ ] Move to Context and Hooks and refactor code
 
-Release 0.1.2
+Release 0.2.0
 
-- [ ] Make input dynamic add fix issues with scroll bar
+- [ ] Make input dynamic and fix issues with scroll bar
 - [ ] Fix scrolling problems
 - [ ] Fix url recognition
 - [ ] Fix parsing errors from markdown-it
-- [ ] Move to Context and Hooks and refactor code
 - [ ] PropTypes on all components
 - [ ] Use Typescript with electron
 
-Release 0.2.0
+Release 0.2.1
 
 - [ ] Figure out why streams aren't closing properly (currently fixed with a bit of a hack, need to look into it some more)
 - [ ] Have setting to load application on startup
