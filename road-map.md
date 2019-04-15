@@ -8,6 +8,10 @@ title: Road Map
 - [ ] Flash app icon when message is received
 - [ ] Focus input when a channel is selected
 - [ ] Allow selection of emojis or users with tab
+- [ ] Make ESC work for and list selectors regardless of what has focus
+- [ ] Add count of unread messages to title bar
+- [ ] Allow for custom status text when setting status
+- [ ] Make jid and room name required when adding a room
 
 Release 0.1.4
 
