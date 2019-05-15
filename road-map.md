@@ -5,35 +5,17 @@ title: Road Map
 
 ## Road Map
 
-- [ ] Flash app icon when message is received
-- [ ] Focus input when a channel is selected
-- [ ] Allow selection of emojis or users with tab
-- [ ] Make ESC work for and list selectors regardless of what has focus
-- [ ] Add count of unread messages to title bar
-- [ ] Allow for custom status text when setting status
-- [ ] Make jid and room name required when adding a room
-
-Release 0.1.4
-
-- [ ] Move to Context and Hooks and refactor code
-
-Release 0.2.0
-
 - [ ] Make input dynamic and fix issues with scroll bar
-- [ ] Fix scrolling problems
-- [ ] Fix url recognition
-- [ ] Fix parsing errors from markdown-it
-- [ ] PropTypes on all components
-- [ ] Use Typescript with electron
+- [ ] Allow for custom status text when setting status
+- [ ] Add support for twitch, soundcloud, and vimeo media players
 
 Release 0.2.1
 
-- [ ] Figure out why streams aren't closing properly (currently fixed with a bit of a hack, need to look into it some more)
 - [ ] Have setting to load application on startup
-- [ ] Flash icon in tray on message
 - [ ] Setup AppUserModelIDs, will fix notifications for Windows
 - [ ] App signing
 - [ ] After x min of inactivity set status to away
+- [ ] Figure out why streams aren't closing properly (currently fixed with a bit of a hack, need to look into it some more)
 - [ ] Confirm all message errors have been accounted for
 
 Release 0.3.0
@@ -45,9 +27,8 @@ Release 0.3.0
 - [ ] Show a users connections in user details
 - [ ] Select colors for theme with hex code
 - [ ] Scheduled messages
-- [ ] Virtualize messages when there is a large number of them
 - [ ] Notify user on both ends when someone is typing
-- [ ] Some type of log explorer
+- [ ] Some type of log explorer with searching
 
 Release 0.4.0
 
