@@ -8,8 +8,9 @@ title: Road Map
 - [ ] Make input dynamic and fix issues with scroll bar
 - [ ] Allow for custom status text when setting status
 - [ ] Add support for twitch, soundcloud, and vimeo media players
+- [ ] Add spell checker
 
-Release 0.2.1
+Release 0.2.5
 
 - [ ] Have setting to load application on startup
 - [ ] Setup AppUserModelIDs, will fix notifications for Windows
