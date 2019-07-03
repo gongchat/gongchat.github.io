@@ -5,8 +5,12 @@ layout: default
 <div class="section simple-section">
   <div class="section-content">
     <div class="update">
+      <div class="crumb">
+        <a href="/release-notes">Release Notes</a> > <span>{{ page.path | split: '-' | last | replace: '.md', '' }}</span>
+      </div>
       <h2>
-        <span>{{ page.title }}</span> <span>{{ page.date | date: "%b %d %Y" }}</span>
+        <span>Release {{ page.path | split: '-' | last | replace: '.md', '' }}</span>
+        <span>{{ page.date | date: "%b %d %Y" }}</span>
       </h2>
       {{ content }}
     </div>

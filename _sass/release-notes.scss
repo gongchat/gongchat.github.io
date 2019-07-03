@@ -7,6 +7,16 @@
 .update {
   padding-bottom: 30px;
 
+  .crumb {
+    font-size: 0.85rem;
+    a {
+      color: gold;
+    }
+    span {
+      color: lightgray;
+    }
+  }
+
   h2 {
     display: flex;
     flex-wrap: wrap;
