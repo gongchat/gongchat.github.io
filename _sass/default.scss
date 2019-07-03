@@ -39,7 +39,7 @@ footer {
 
   .section {
     flex-grow: 1;
-    padding: 60px 15px;
+    padding: 60px 45px;
 
     h2 {
       margin: 15px 0;
@@ -78,6 +78,11 @@ footer {
 
     .content {
       padding-top: 0;
+
+      .section {
+        flex-grow: 1;
+        padding: 30px 15px;
+      }
     }
   }
 }
