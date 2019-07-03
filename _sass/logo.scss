@@ -78,22 +78,22 @@
   }
 
   .delay1 {
-    animation: waves 5s 0.5s linear;
+    animation: waves 5s 0s linear;
     animation-iteration-count: 1;
   }
 
   .delay2 {
-    animation: waves 5s linear 1.3s forwards;
+    animation: waves 5s linear 0.8s forwards;
     animation-iteration-count: 1;
   }
 
   .delay3 {
-    animation: waves 5s linear 1.9s forwards;
+    animation: waves 5s linear 1.4s forwards;
     animation-iteration-count: 1;
   }
 
   .delay4 {
-    animation: waves 5s linear 2.5s forwards;
+    animation: waves 5s linear 2s forwards;
     animation-iteration-count: 1;
   }
 }
