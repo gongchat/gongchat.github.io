@@ -32,3 +32,11 @@
     padding: 3px 0;
   }
 }
+
+@media (max-width: 992px) {
+  .update {
+    .crumb {
+      margin-top: 15px;
+    }
+  }
+}

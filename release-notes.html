@@ -11,8 +11,9 @@ title: Release Notes
       {% if post.path contains 'release-notes' %}
       <li>
         <a href="{{ post.url }}">
-          Release {{ post.path | split: '-' | last | replace: '.md', '' }} -
-          {{ post.date | date: "%b %d %Y" }}</a>
+          {{ post.date | date: "%b %d %Y" }} -
+          Release {{ post.path | split: '-' | last | replace: '.md', '' }}
+        </a>
       </li>
       {% endif %}
       {% endfor %}

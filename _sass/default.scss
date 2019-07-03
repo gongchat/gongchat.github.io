@@ -82,6 +82,20 @@ footer {
       .section {
         flex-grow: 1;
         padding: 30px 15px;
+
+        h2 {
+          font-size: 32px;
+        }
+      }
+
+      .simple-section {
+        margin-top: 46px;
+        padding: 0 15px;
+
+        h2 {
+          font-size: 32px;
+          margin-top: 10px;
+        }
       }
     }
   }
