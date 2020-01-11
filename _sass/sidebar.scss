@@ -47,6 +47,11 @@
       &:hover {
         color: gold;
       }
+
+      &:not([href]) {
+        color: gray;
+        pointer-events: none;
+      }
     }
   }
 }
