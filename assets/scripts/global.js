@@ -23,6 +23,29 @@ $(document).ready(function() {
     });
   }
 
+  function setDownloadLinks() {
+    $.get('https://api.github.com/repos/gongchat/gong/releases/latest')
+      .then(res => {
+        const windows = res.assets.find(asset => asset.name.includes('.exe'));
+        const linux = res.assets.find(asset => asset.name.includes('.deb'));
+        const mac = res.assets.find(asset => asset.name.includes('.dmg'));
+
+        if (windows) {
+          $('.download-windows').attr('href', windows.browser_download_url);
+        }
+        if (linux) {
+          $('.download-linux').attr('href', linux.browser_download_url);
+        }
+        if (mac) {
+          $('.download-mac').attr('href', mac.browser_download_url);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  }
+
+  setDownloadLinks();
   attachHamburgerOnClick();
   attachGongOnClick();
 });
